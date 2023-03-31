@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/1935d064dd.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="main">
+      <h1>Simple Currency Converter</h1>
+      <div class="container box">
+        <div class="converter">
+          <!-- Base conversion -->
+          <div class="base-convert">
+            <p>Exchange Rate</p>
+            <span class="base">1 USD = 0.73 GBP</span>
+          </div>
+          <!-- Text from and To -->
+          <div class="text">
+            <p>From</p>
+            <p>To</p>
+          </div>
+          <!-- Main Conversion -->
+          <div class="main-convert">
+            <!-- from -->
+            <div class="cur-box">
+              <div class="currency from">
+                <img src="https://www.countries-ofthe-world.com/flags-normal/flag-of-United-States-of-America.png" alt="USA flag">
+              <select class="cur-1">
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+                <option value="USD" selected>USD</option>
+                <option value="KES">KES</option>
+              </select>
+              </div>
+            <input type="text" class="cur-1-input" placeholder="0">
+            </div>
+            <!-- Switch Button -->
+            <div class="switch-cur">
+              <i class="fas fa-exchange-alt"></i>
+            </div>
+            <!-- To -->
+            <div class="cur-box">
+              <div class="currency to">
+                <img src="https://www.countries-ofthe-world.com/flags-normal/flag-of-United-Kingdom.png" alt="Pound flag">
+              <select class="cur-2">
+                <option value="EUR">EUR</option>
+                <option value="GBP" selected>GBP</option>
+                <option value="USD">USD</option>
+                <option value="KES">KES</option>
+
+              </select>
+              </div>
+            <input type="text" class="cur-2-input" placeholder="0.00">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
